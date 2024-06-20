@@ -1,0 +1,41 @@
+.side-1 {
+  width: 20%;
+  height: 100%;
+  background-color: #351e4a;
+}
+
+.side-2 {
+  width: 20%;
+  height: 100%;
+  background-color: #51317c;
+}
+
+.side-3 {
+  width: 20%;
+  height: 100%;
+  background-color: #7035bc;
+}
+
+.side-4 {
+  width: 20%;
+  height: 100%;
+  background-color: #8f3fe5;
+}
+
+@media (prefers-color-scheme: dark) {
+  .side-1 {
+    background-color: #ceb3f4;
+  }
+
+  .side-2 {
+    background-color: #8f3fe5;
+  }
+
+  .side-3 {
+    background-color: #7035bc;
+  }
+
+  .side-4 {
+    background-color: #51317c;
+  }
+}

@@ -1,0 +1,149 @@
+html {
+  background-color: #ceb3f4;
+  color: #351e4a;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+#header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer {
+  margin: 5px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.link-list {
+  list-style: none;
+  padding: 12px;
+  margin-left: 48px;
+  font-size: 36px;
+}
+
+.link {
+  padding: 4px 16px 4px 16px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  font-weight: bold;
+}
+
+.link > svg {
+  margin-right: 8px;
+  font-weight: normal;
+}
+
+a.link:link,
+a.link:visited,
+a.link:active {
+  text-decoration: none;
+  color: #351e4a;
+}
+
+a.link:hover {
+  text-decoration: none;
+  color: #ceb3f4;
+  background-color: #351e4a;
+  border-radius: 8px;
+}
+
+#logo_regular_horizontal {
+  display: none;
+}
+
+#logo_regular_horizontal_dark {
+  display: none;
+}
+
+#logo_regular_stacked_dark {
+  display: none;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#sidebar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+}
+
+.content {
+  padding: 16px;
+  max-width: 800px;
+  align-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  #logo_regular_horizontal {
+    display: block;
+    max-width: 80%;
+    height: auto;
+  }
+
+  #logo_regular_stacked {
+    display: none;
+  }
+
+  #header {
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #351e4a;
+    color: #ceb3f4;
+  }
+
+  #logo_regular_stacked_dark {
+    display: block;
+  }
+
+  #logo_regular_stacked {
+    display: none;
+  }
+
+  a.link:hover {
+    color: #351e4a;
+    background-color: #ceb3f4;
+    border-radius: 8px;
+
+    svg {
+      color: #351e4a;
+    }
+  }
+
+  a.link:link,
+  a.link:visited,
+  a.link:active {
+    text-decoration: none;
+    color: #ceb3f4;
+  }
+
+  a.link:hover {
+    text-decoration: none;
+    color: #351e4a;
+    background-color: #ceb3f4;
+    border-radius: 8px;
+  }
+}
