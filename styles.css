@@ -147,3 +147,19 @@ a.link:hover {
     border-radius: 8px;
   }
 }
+
+@media screen and (max-width: 800px) and (prefers-color-scheme: dark) {
+  #logo_regular_stacked_dark {
+    display: none;
+  }
+
+  #logo_regular_horizontal {
+    display: none;
+  }
+
+  #logo_regular_horizontal_dark {
+    display: block;
+    max-width: 80%;
+    height: auto;
+  }
+}
